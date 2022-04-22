@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="220.0" prefWidth="760.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="net.imparndo.supermercato.SupermercatoController">
+   <top>
+      <MenuBar BorderPane.alignment="CENTER">
+        <menus>
+          <Menu mnemonicParsing="false" text="Simulazione">
+            <items>
+                  <MenuItem mnemonicParsing="false" onAction="#onStartMenuClick" text="Start" />
+              <MenuItem mnemonicParsing="false" onAction="#onStopMenuClick" text="Stop" />
+                  <MenuItem mnemonicParsing="false" text="Riprendi" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Casse">
+            <items>
+              <MenuItem mnemonicParsing="false" text="Delete" />
+                  <MenuItem mnemonicParsing="false" text="Add" />
+            </items>
+          </Menu>
+        </menus>
+      </MenuBar>
+   </top>
+   <center>
+      <HBox fx:id="h" alignment="CENTER" prefHeight="185.0" prefWidth="706.0" BorderPane.alignment="CENTER" />
+   </center>
+</BorderPane>
